@@ -1,0 +1,521 @@
+/*=======================Bar CSS========================*/
+
+@media screen and (max-width: 768px) {
+  .openNav, .closebtn {
+    display: block;
+    color: white;
+  }
+  .openNav {
+    float: right;
+  }
+
+/*Header CSS > Bar*/
+  .wrapper {
+    overflow: hidden;
+  }
+  footer {
+    overflow: hidden;
+  }
+  .bottom-footer {
+    overflow: hidden;
+  }
+  header {
+    padding: 0;
+    overflow: hidden;
+  }
+  .bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    height: 70px;
+    background-color: #FAE800;
+    position: relative;
+  }
+
+/*Header CSS > Bar > Branding*/
+  .branding {
+    margin-left: 2%;
+    width: 40%;
+    //border: solid white  3px;
+    float: left
+  }
+/*Header CSS > Bar > Branding > logo*/
+  .logo {
+    z-index: 3;
+    /*width: 233.81px;*/
+    /*height: 53px;*/
+    color: white;
+    font-family: "Lobster", Sans-serif, serif;
+    font-size: 4vh;
+    font-weight: bolder;
+    line-height: 33px;
+    text-align: center;
+    float: left;
+    border: 3px solid white;
+    padding: 4px;
+
+  }
+/*Header CSS > Bar > profile > image*/
+  .profile-wrapper {
+    margin: auto;
+    height: 70px;
+  }
+  .profile > img {
+    height: 65px;
+    width: 65px;
+    vertical-align: middle;
+
+  }
+
+/*Header CSS > Bar > nav*/
+  .openNav {
+    width: 40%;
+    float: right;
+    margin-right: 2%;
+    text-align: right;
+    /*transform: translateX(170px);
+    border: 3px solid white;
+    font-size: ;*/
+
+  }
+  .closebtn {
+
+    width: 40px;
+    float: right;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    height: 40px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    cursor:pointer
+  }
+  .nav-wrapper {
+    border: 3px white solid;
+    width: auto;
+    height: 400px;
+    position: absolute;
+    right: -9px;
+    transform: translate(296px, 130px);
+    transition: all .5s ease-out;
+    background-color: #fae800;
+    margin-top: -12px;
+    z-index: 1;
+  }
+
+  nav {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/*Header CSS > Bar > nav > div*/
+  nav > div {
+    text-align: center;
+    color: white;
+    font-family: "Roboto", serif;
+    font-size: 26px;
+    border: white 3px solid;
+    width: 150px;
+    border-right: none;
+    border-left: 0;
+  }
+
+  .nav-item:hover {
+    border: white 3px solid;
+  }
+}
+
+/*=======================Element One CSS========================*/
+
+@media screen and (min-width: 767px) {
+  .element-one-small-wrapper {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    border-bottom: 3px yellow solid;
+
+    background-color: #ffffff;
+    background-image: url("../images/texture.svg")
+  }
+  .element-one-wrapper {
+    display: none;
+  }
+  .element-one-small-wrapper {
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+  .element-one-small {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 0;
+    background-color: white;
+    height: 350px;
+    box-shadow: none;
+  }
+  .text-change {
+    line-height: 35px;
+    transition: all 2s;
+  }
+
+}
+@media screen and (max-width: 500px) {
+  .element-one-small-wrapper{
+    margin-top: 15%;
+  }
+}
+@media screen and (max-width: 430px) {
+  header {
+    height: 450px;
+  }
+  .element-one-small-wrapper{
+    margin-top: 1px;
+  }
+  .element-one-small {
+    background: radial-gradient(circle farthest-side at 0% 50%,#fb1 23.5%,rgba(240,166,17,0) 0)21px 30px,
+radial-gradient(circle farthest-side at 0% 50%,#B71 24%,rgba(240,166,17,0) 0)19px 30px,
+linear-gradient(#fb1 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,#fb1 0)0 0,
+linear-gradient(150deg,#fb1 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fb1 0)0 0,
+linear-gradient(30deg,#fb1 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fb1 0)0 0,
+linear-gradient(90deg,#B71 2%,#fb1 0,#fb1 98%,#B71 0%)0 0 #fb1;
+background-size: 40px 60px;
+  }
+}
+@media screen and (max-width: 361px) {
+  .rw-words {
+   width: 280px;
+  }
+}
+
+/*=======================Section One CSS========================*/
+
+@media screen and (max-width: 1000px) {
+  .sec-name-one {
+    display: none;
+  }
+  .sec-one {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .sec-one {
+    //border: orange 3px solid;
+    width: auto;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    padding-left: 3%;
+  }
+  .sec-one-comp-one {
+    height: 100px;
+    grid-column: 1/3;
+  }
+  .sec-one-comp-two {
+    grid-row: 2/3;
+  }
+  .sec-one-comp-three {
+    grid-row: 2/3;
+  }
+  .sec-name-mobile-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    grid-column: 1/3;
+  }
+  .sec-one > div {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .sec-name-mobile-one {
+    display: none;
+  }
+}
+
+/*=======================Section Two CSS========================*/
+@media screen and (max-width: 599px) {
+  .sec-two-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    height: 700px;
+  }
+  .sec-two-comp-one {
+    margin-top: 5%;
+    height: 200px;
+    width: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .sec-two-comp-two {
+    width: auto;
+    margin-top: 50px;
+  }
+  .sec-two-comp-two h3 {
+    font-size: 25px;
+    margin-bottom: 5%;
+  }
+  .sec-two-comp-two p {
+    font-size: 18px;
+  }
+}
+
+/*=======================Section Two CSS========================*/
+
+@media screen and (max-width:760px) {
+  .sec-three {
+    background: red;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .sec-three-comp-one {
+    grid-column: 1/4;
+    width: 520px;
+  }
+  .sec-three-comp-eighth {
+    grid-column: 1/4;
+    width: 520px;
+  }
+}
+
+@media screen and (max-width:549px) {
+  .sec-three {
+    background: orange;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+  }
+  .sec-three-comp-one,
+  .sec-three-comp-eighth {
+    width: 150px;
+    grid-column: 1/2;
+  }
+  .sec-three-comp-eighth {
+    grid-column: 2/3;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .sec-three-comp {
+    width: 100px;
+    height: 100px;
+  }
+  .sec-three-comp-four span {
+    font-size: 15px;
+  }
+  .sec-three-comp-sixth span {
+    font-size: 15px;
+  }
+  .sec-three-comp-eighth span {
+    font-size: 15px;
+  }
+}
+
+/*=======================Section Four CSS========================*/
+
+@media screen and (max-width: 930px) {
+  .sec-four {
+    //width: 300px !important;
+    grid-column-gap: 5% !important;
+    justify-content: center;
+  }
+  .sec-four-comp {
+    width: 360px !important;
+    border: 3px double white;
+  }
+
+  .sec-four-comp-img {
+    height: 330px !important;
+  }
+  .sec-four-comp-img-one,
+  .sec-four-comp-img-two,
+  .sec-four-comp-img-three {
+    height: 360px !important;
+  }
+  .content {
+    height: 100px !important;
+  }
+  .sec-four-comp:hover .sec-four-comp-title {
+    transform: translate(0, -90px);
+  }
+  .sec-four-comp:hover .content {
+    transform: translate(0, -90px);
+  }
+}
+
+@media screen and (max-width:800px) {
+  .sec-four {
+    grid-column-gap: 5% !important;
+    justify-content: center;
+  }
+  .sec-four-comp {
+    width: 320px !important;
+  }
+  .sec-four-comp-img {
+    height: 330px !important;
+  }
+  .sec-four-comp-img-two {
+    height: 360px !important;
+  }
+  .content {
+    height: 100px !important;
+  }
+  .sec-four-comp:hover .sec-four-comp-title {
+    transform: translate(0, -90px);
+  }
+  .sec-four-comp:hover .content {
+    transform: translate(0, -90px);
+  }
+}
+@media screen and (max-width: 700px) {
+  .sec-four {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    grid-gap: 3% !important;
+    overflow: visible;
+  }
+  .sec-four-comp {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .sec-four-comp-img {
+    height: 230px !important;
+  }
+  .content {
+    height: 70px !important;
+  }
+  .sec-four-comp-img-two {
+    height: 230px !important;
+  }
+  .sec-four-comp:hover .sec-four-comp-title {
+    transform: translate(0, -110px);
+  }
+  .sec-four-comp:hover .content {
+    transform: translate(0, -110px);
+  }
+}
+@media screen and (max-width: 650px) {
+  .sec-four {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    overflow-x: scroll;
+    width: auto;
+  }
+  .sec-four-comp {
+    width: 220px !important;
+  }
+  .sec-four-comp:hover .sec-four-comp-title {
+    transform: translate(0, -85px);
+  }
+  .sec-four-comp:hover .content {
+    transform: translate(0, -85px);
+  }
+}
+@media screen and (max-width: 500px) {
+  .sec-four {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    overflow: hidden;
+    width: auto;
+    height: 700px !important;
+    grid-row-gap: 1% !important;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    padding-bottom: 5%;
+  }
+  .sec-four-comp-img-two {
+    height: 260px !important;
+  }
+  .sec-four-comp {
+    width: 300px !important;
+    background: white !important;
+    box-shadow: none !important;
+    border: 3px solid silver;
+    border-bottom: none;
+  }
+  .sec-four-comp-one,
+  .sec-four-comp-two {
+    display: none;
+  }
+}
+
+/*=======================Footer CSS========================*/
+
+@media screen and (max-width: 1137px) {
+  .footer-comp-one p {
+    transform: translateY(-30px);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .footer-comp-two {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media screen and (max-width: 900px) {
+  footer {
+    grid-template-columns: 50% 50%;
+  }
+
+  .footer-comp-two {
+    grid-template-columns: 100% 0;
+  }
+
+  .footer-inner-comp-two img {
+    display: none;
+  }
+
+  .newsletter > input[type=text] {
+    margin-bottom: 3%;
+  }
+  .newsletter > input[type=email] {
+    margin-bottom: 8%;
+  }
+}
+@media screen and (max-width: 501px) {
+  footer {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    height: 1000px;
+  }
+  .footer-comp-two {
+    //border: salmon 3px solid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    padding: 0;
+    margin-right: 3%;
+    margin-left: 3%;
+    justify-content: center;
+  }
+  .footer-inner-comp-one {
+    padding: 0;
+  }
+
+}
+
